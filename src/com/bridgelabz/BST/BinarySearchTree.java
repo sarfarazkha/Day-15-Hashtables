@@ -2,8 +2,7 @@ package com.bridgelabz.BST;
 
 
 /**
- *@PROBLEM_STATEMENT : UC2 ability to create the binary tree shown in the figure
- * - Check if all are added with using size method in Binary Tree
+ *@PROBLEM_STATEMENT : UC3 Search for element 63
  */
 
 class Node {
@@ -80,5 +79,30 @@ public class BinarySearchTree {
      */
     public int size() {
         return size;
+    }
+    /*
+     * @Purpose : Search Element In BST
+     *
+     * @Return : Boolean,IsPresent
+     */
+
+    public boolean search(Node node, int data) {
+        if (node == null) {
+            return false;
+        }
+
+        boolean isPresent = false;
+        while (node != null) {
+            if (data < node.data) {
+                node = node.left;
+            } else if (data > node.data) {
+                node = node.right;
+            } else {
+                isPresent = true;
+                break;
+            }
+        }
+
+        return isPresent;
     }
 }
