@@ -4,7 +4,7 @@ public class HashImplementation<K, V> {
     Node head;
     Node tail;
 
-    public void add(K key, V value) {
+    public void add(K key, V value) { 
         Node<K, V> myNode = searchNode(key);
         if (myNode == null) {
             myNode = new Node<K, V>(key, value);
