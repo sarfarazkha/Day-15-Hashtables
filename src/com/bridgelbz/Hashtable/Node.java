@@ -1,7 +1,7 @@
 package com.bridgelbz.Hashtable;
 
 
-public class Node<K, V> {
+public class Node<K, V> { 
     K key;
     V value;
     Node<K, V> next;
@@ -44,7 +44,7 @@ public class Node<K, V> {
 
     // toString method for to return a string representation of an object.
     @Override
-    public String toString() {
+    public String toString() { 
         // StringBuilder class can boost performance when concatenating many strings
         // together in a loop
         StringBuilder nodeString = new StringBuilder();
