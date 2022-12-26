@@ -15,7 +15,7 @@ public class Hashtable {
         // lowercase
         String[] messageArray = message.toLowerCase().split(" ");
 
-        for (String word : messageArray) {
+        for (String word : messageArray) { 
             // Search for the word in the linked list
             Integer value = hashImpl.get(word);
             // If not found, frequency of the word StayWith 1
